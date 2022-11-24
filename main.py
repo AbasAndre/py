@@ -1,30 +1,22 @@
+username = "andre"
+password = "123"
 
-print("1. ADD")
-print("2. SUBTRACT")
-print("3. MULTIPLY")
-print("4. DEVIDE")
-print("Select an operation to perform: ")
+x = 1
 
-operation = input()
+while x == 1:
 
-if operation == "1":
-    num1 = input("Enter first number: ")
-    num2 = input("Enter second number: ")
-    print("The sum is " + str(int(num1) + int(num2)))
+    a = input("username: ")
+    b = input("password: ")
 
-elif operation == "2":
-    num1 = input("Enter first number: ")
-    num2 = input("Enter second number: ")
-    print("The difference is " + str(int(num1) - int(num2)))
-
-elif operation == "3":
-    num1 = input("Enter first number: ")
-    num2 = input("Enter second number: ")
-    print("The product is " + str(int(num1) * int(num2)))
-
-elif operation == "4":
-    num1 = input("Enter first number: ")
-    num2 = input("Enter second number: ")
-    print("The result is " + str(int(num1) / int(num2)))
-else:
-    print("Invalid Entry")
+    if username == a and  password != b:
+        print("password incorrect")
+        x += 0
+    elif username != a and password == b:
+        print("username incorrect")
+        x += 0
+    elif username == a and password == b:
+        print("username and password correct")
+        break
+    else:
+        print("username and password incorrect")
+        x += 0
